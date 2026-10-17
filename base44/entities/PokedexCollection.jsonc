@@ -1,0 +1,31 @@
+{
+  "name": "PokedexCollection",
+  "type": "object",
+  "properties": {
+    "owned": {
+      "type": "object",
+      "default": {},
+      "description": "Dex number -> how many of this Pok\u00e9mon the user owns"
+    },
+    "notes": {
+      "type": "object",
+      "default": {},
+      "description": "Dex number -> the user's note for this Pok\u00e9mon"
+    }
+  },
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  },
+  "required": []
+}
