@@ -1,0 +1,29 @@
+{
+  "name": "recdex",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "electron-dev": "npm run build && electron .",
+    "electron-build": "npm run build && electron-builder --win",
+    "electron-build-portable": "npm run build && electron-builder --win --portable"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.5",
+    "eslint": "^8.48.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "electron": "^latest",
+    "electron-is-dev": "^3.0.1",
+    "electron-builder": "^24.6.4"
+  }
+}
